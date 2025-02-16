@@ -1,4 +1,4 @@
-#Linux Socket Chat via Network
+# Linux Socket Chat via Network
 
 Chat program between Server and Client 
 
@@ -11,3 +11,6 @@ gcc Socket_chat.c -o Socket_chat
   Exampe : ./Socket_chat -client 127.0.0.1 12346
 
 Note: Server need to be run first
+
+**TODO**
+- Fix the issue the fget() return immediately when the stdin buffer have a newline character, which is added by user when program is blocked in read().
